@@ -16,8 +16,10 @@ body {
   height: 100vh;
 }
 
-h1 {
+h1,
+h3 {
   color: white;
+  font-family: "Bebas Neue";
 }
 
 nav {
@@ -52,6 +54,45 @@ footer {
   width: 100%;
   background-color: white;
   min-height: 10em;
-  position: absolute;
-  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Home page*/
+
+.page {
+  padding: 1em;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 2em;
+}
+
+.home_splash {
+  background-image: url(./Assets/Logo/Logo_white.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 85vw;
+  height: 30em;
+  margin-top: 2em;
+}
+
+.home_about {
+  text-align: center;
+  font-size: 1.2em;
+  width: 50%;
+}
+
+.home_about > h3 {
+  font-size: 4em;
+}
+
+.home_about > p {
+  font-size: 1.25em;
 }
