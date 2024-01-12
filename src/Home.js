@@ -1,8 +1,17 @@
+import Burger1 from "./Assets/Burgers/Burger1.jpeg";
+import Burger2 from "./Assets/Burgers/Burger2.jpeg";
+import Burger3 from "./Assets/Burgers/Burger3.jpeg";
+
 export default function Home() {
   return (
     <div className="home page">
-      <div className="home_splash"></div>
-      <div className="home_about">
+      <div className="home-splash"></div>
+      <div className="burger-gallery">
+        <img src={Burger1} alt="burger"></img>
+        <img src={Burger2} alt="burger"></img>
+        <img src={Burger3} alt="burger"></img>
+      </div>
+      <div className="home-about">
         <h3>About The Burgers</h3>
         <p>
           Welcome to Boss Burgers, where culinary excellence meets the
