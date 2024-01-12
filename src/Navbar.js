@@ -11,17 +11,29 @@ export default function Navbar() {
       <div>
         <ul className={navOpen ? "show-nav" : ""}>
           <li>
-            <Link className="nav-link" to="/">
+            <Link
+              className="nav-link"
+              to="/"
+              onClick={() => setNavOpen((open) => !open)}
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link className="nav-link" to="/menu">
+            <Link
+              className="nav-link"
+              to="/menu"
+              onClick={() => setNavOpen((open) => !open)}
+            >
               Menu
             </Link>
           </li>
           <li>
-            <Link className="nav-link" to="/contact">
+            <Link
+              className="nav-link"
+              to="/contact"
+              onClick={() => setNavOpen((open) => !open)}
+            >
               Contact
             </Link>
           </li>

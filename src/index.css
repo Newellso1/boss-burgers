@@ -147,6 +147,35 @@ footer {
   font-size: 4em;
 }
 
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.options > p {
+  text-align: center;
+  font-size: 2em;
+}
+
+.options > div {
+  display: flex;
+  flex-direction: row;
+  font-size: 4em;
+  gap: 1em;
+}
+
+.type-radio {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.type-delete {
+  color: red;
+  position: absolute;
+  left: 0.1em;
+}
+
 .burger-menu {
   display: flex;
   justify-content: center;
