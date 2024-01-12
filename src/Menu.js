@@ -9,7 +9,7 @@ import { faLeaf } from "@fortawesome/free-solid-svg-icons";
 export default function Menu() {
   return (
     <div className="menu page">
-      <h3>Menu:</h3>
+      <h3>Menu</h3>
       <div className="options">
         <p>Feeling picky?</p>
         <div>

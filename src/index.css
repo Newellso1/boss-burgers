@@ -43,6 +43,7 @@ nav {
   border-bottom: 0.5em solid black;
   background-color: white;
   overflow-x: hidden;
+  z-index: 1;
 }
 
 nav > div {
@@ -80,11 +81,18 @@ nav > h2 {
 footer {
   width: 100%;
   background-color: white;
-  min-height: 15em;
+  min-height: 13em;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   border-top: 0.5em solid black;
+  padding-top: 1em;
+  gap: 2em;
+}
+
+footer > p {
+  justify-self: flex-end;
 }
 
 /* Home page*/
@@ -144,6 +152,7 @@ footer {
 /* Menu */
 
 .menu > h3 {
+  margin-top: 0.5em;
   font-size: 4em;
 }
 
@@ -174,6 +183,10 @@ footer {
   color: red;
   position: absolute;
   left: 0.1em;
+}
+
+.type-hide {
+  display: none;
 }
 
 .burger-menu {
