@@ -10,6 +10,7 @@ const menu = [
     name: "Hot Shot",
     description:
       "Ignite your taste buds with the Hot Shot, a fiery masterpiece where succulent beef patties meet the intense heat of scotch bonnet sauce, delivering a spicy sensation that demands respect - grab a knife and fork, this one's not for the faint-hearted.",
+    type: "beef",
     image: "https://img.getimg.ai/generated/img-FZzkaJwNIn8gUklX4gHx9.jpeg",
   },
   {

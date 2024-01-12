@@ -22,7 +22,8 @@ body::-webkit-scrollbar {
 }
 
 h1,
-h3 {
+h3,
+h4 {
   color: white;
   font-family: "Bebas Neue";
 }
@@ -70,6 +71,10 @@ nav > h2 {
 
 .nav-button {
   display: none;
+}
+
+.nav-link {
+  color: black;
 }
 
 footer {
@@ -136,6 +141,40 @@ footer {
   border-radius: 0.25em;
 }
 
+/* Menu */
+
+.menu > h3 {
+  font-size: 4em;
+}
+
+.burger-menu {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 95%;
+  flex-wrap: wrap;
+  padding: 3em 0;
+  gap: 1em;
+}
+
+.menu-item {
+  display: flex;
+  gap: 1em;
+  border: 0.5em solid black;
+  width: 40em;
+  height: 19em;
+  background-color: black;
+}
+
+.menu-item > img {
+  width: auto;
+  border-radius: 0.25em;
+}
+
+.menu-item > div > h4 {
+  font-size: 4em;
+}
+
 @media screen and (max-width: 900px) {
   nav > div > ul {
     display: none;
@@ -144,6 +183,7 @@ footer {
   .nav-button {
     position: absolute;
     right: 2em;
+    top: 1.6em;
     display: flex;
     flex-direction: column;
     width: 5em;
@@ -160,13 +200,13 @@ footer {
 
   .button-middle {
     width: 100%;
-    height: 2.5em;
+    min-height: 2.5em;
     background-image: url(./Assets/Hamburger_Menu/cow.webp);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     margin: 0.1em 0;
-    transition: all 100ms ease;
+    transition: all 100ms linear;
   }
 
   .button-open {
@@ -183,5 +223,66 @@ footer {
   .show-nav {
     display: flex;
     flex-direction: column;
+    margin-top: 3em;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page {
+    gap: 1.5em;
+  }
+
+  /* Home page */
+
+  .home-splash {
+    height: 12em;
+    width: 100%;
+  }
+
+  .burger-gallery {
+    justify-self: flex-end;
+    gap: 1em;
+  }
+
+  .burger-gallery > img {
+    width: 7em;
+  }
+
+  .home-about {
+    font-size: 1.1em;
+    width: 100%;
+  }
+
+  .home-about > h3 {
+    font-size: 3em;
+  }
+
+  /* Menu */
+  .burger-menu {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1em;
+    background-color: black;
+  }
+
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border: 0.5em solid white;
+    padding: 0.5em;
+    width: 95vw;
+    height: auto;
+    background-color: black;
+  }
+
+  .menu-item > img {
+    width: 15em;
+    border-radius: 0.25em;
   }
 }

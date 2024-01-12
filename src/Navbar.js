@@ -11,13 +11,19 @@ export default function Navbar() {
       <div>
         <ul className={navOpen ? "show-nav" : ""}>
           <li>
-            <Link to="/">Home</Link>
+            <Link className="nav-link" to="/">
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/menu">Menu</Link>
+            <Link className="nav-link" to="/menu">
+              Menu
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link className="nav-link" to="/contact">
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
