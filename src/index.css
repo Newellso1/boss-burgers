@@ -65,7 +65,7 @@ nav > div > ul > li {
   color: black;
 }
 
-nav > h2 {
+.nav-link > h2 {
   font-family: "Bebas Neue";
   font-size: 3em;
 }
@@ -165,28 +165,33 @@ footer > p {
   text-align: center;
   font-size: 2em;
 }
+.options > div > p {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 1.25em;
+}
 
-.options > div {
+.options > div > form {
+  margin: 0.075em;
   display: flex;
   flex-direction: row;
   font-size: 4em;
   gap: 1em;
 }
 
-.type-radio {
-  width: fit-content;
-  height: fit-content;
-  position: relative;
+.options > div > form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
 }
 
-.type-delete {
-  color: red;
-  position: absolute;
-  left: 0.1em;
-}
-
-.type-hide {
+.options > div > form > div > input {
   display: none;
+}
+
+.cross-out {
+  color: red;
+  opacity: 80%;
 }
 
 .burger-menu {
@@ -197,6 +202,12 @@ footer > p {
   flex-wrap: wrap;
   padding: 3em 0;
   gap: 1em;
+}
+
+.burger-menu > div > h1 {
+  color: black;
+  font-size: 5em;
+  text-align: center;
 }
 
 .menu-item {
@@ -310,6 +321,12 @@ footer > p {
     flex-wrap: nowrap;
     gap: 1em;
     background-color: black;
+  }
+
+  .burger-menu > div > h1 {
+    color: white;
+    font-size: 5em;
+    text-align: center;
   }
 
   .menu-item {
