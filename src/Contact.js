@@ -1,7 +1,9 @@
+import Building from "./Assets/Building.jpeg";
+
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact</h1>
+    <div className="contact page">
+      <form></form>
     </div>
   );
 }

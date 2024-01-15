@@ -7,7 +7,9 @@ export default function Navbar() {
 
   return (
     <nav>
-      <h2>Boss Burgers</h2>
+      <Link to="/" className="nav-link">
+        <h2>Boss Burgers</h2>
+      </Link>
       <div>
         <ul className={navOpen ? "show-nav" : ""}>
           <li>

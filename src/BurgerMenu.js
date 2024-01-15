@@ -45,14 +45,14 @@ const menu = [
     name: "Veggie",
     description:
       "Indulge in the Veggie Burger, a plant-based sensation with a twist - a patty bursting with fresh vegetables sandwiched between cauliflower hash brown buns for a delightful crunch in every bite.",
-    type: "veggie",
+    type: "veg",
     image: "https://img.getimg.ai/generated/img-2ucmVdxkEohvKiiO5ZMsq.jpeg",
   },
   {
     name: "Bloody Beet",
     description:
-      "Sink your teeth into the Burger, a vegetarian masterpiece where the earthy richness of a beetroot patty meets a symphony of complementary flavors,",
-    type: "veggie",
+      "Sink your teeth into the Burger, a vegetarian masterpiece where the earthy richness of a beetroot patty meets a symphony of complementary flavors.",
+    type: "veg",
     image: "https://img.getimg.ai/generated/img-zYdnIraOte4YKB9YDqEhy.jpeg",
   },
 ];
