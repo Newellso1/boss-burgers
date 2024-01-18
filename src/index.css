@@ -83,16 +83,45 @@ footer {
   background-color: white;
   min-height: 13em;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   border-top: 0.5em solid black;
-  padding-top: 1em;
+  padding: 1em;
   gap: 2em;
+  font-family: "Courier Prime";
 }
 
 footer > p {
   justify-self: flex-end;
+}
+
+.info > h5 {
+  font-size: 1.1em;
+}
+
+footer > .info > ul > li {
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.5em;
+}
+
+footer > iframe {
+  width: 20em;
+  height: 20em;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.footer-logo > p {
+  text-align: center;
 }
 
 /* Home page*/
@@ -228,6 +257,68 @@ footer > p {
   font-size: 4em;
 }
 
+/* Contact Page  */
+
+.contact h3 {
+  margin-top: 0.5em;
+  font-size: 4em;
+  text-align: center;
+}
+
+.contact > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact > form > input {
+  font-family: "Courier Prime";
+}
+
+.contact > form > input:nth-child(1),
+.contact > form > input:nth-child(2) {
+  background-color: black;
+  color: white;
+  border: none;
+  border-bottom: 0.2em solid white;
+  padding: 0.1em;
+  font-size: 1.5em;
+}
+
+.contact > form > input:nth-child(1)::placeholder,
+.contact > form > input:nth-child(2)::placeholder {
+  color: white;
+}
+
+.contact > form > input:nth-child(3) {
+  border: none;
+  height: 25em;
+  padding: 0.25em;
+}
+
+.contact > form > button {
+  background-color: white;
+  border: none;
+  font-size: 1em;
+  outline: none;
+  padding: 0.75em;
+  width: 10em;
+  align-self: flex-end;
+  font-family: "Courier Prime";
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 0s 600000s, color 0s 600000s;
+}
+
+.contact > form > textarea {
+  resize: none;
+  height: 27em;
+  padding: 0.5em;
+  font-size: 1.25em;
+}
+
 @media screen and (max-width: 900px) {
   nav > div > ul {
     display: none;
@@ -286,6 +377,17 @@ footer > p {
 
   .page {
     gap: 1.5em;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 1em;
+  }
+
+  .footer-logo {
+    justify-self: flex-start;
   }
 
   /* Home page */
